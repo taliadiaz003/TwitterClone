@@ -3,7 +3,7 @@ common
 ********************/
 
 body {
-    background-color: azure;
+
 }
 
 html,
@@ -14,8 +14,8 @@ body {
     max-width: 600px;
     height: 100%;
     margin: 0 auto;
-    border-left: 1px solid #ccc;
-    border-right: 1px solid #ccc;
+    border-left: 1px solid;
+    border-right: 1px solid;
 }
 
 /*
@@ -90,7 +90,7 @@ Post
 }
 
 .posts li .name_body .datetime {
-    color: red;
+    color: black;
 }
 
 @media screen and (max-width: 500px) {

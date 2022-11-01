@@ -1,14 +1,14 @@
 {% extends "base.html" %} {% block content %} {% load static %}{% load static %}
 
 <section class="content">
-    <h1>Restaurant</h1>
+    <h1>Twitter Dark Mode</h1>
     
     <section class="post_form">
 
         <form action="/" method="POST">
             {% csrf_token %}
-            <input type="text" name="name" placeholder="Name" required />
-            <textarea name="body" placeholder="Tell us anything" required></textarea>
+            <input type="text" name="name" placeholder="Username" required />
+            <textarea name="body" placeholder="Text here" required></textarea>
             <input type="submit" value="Post" />
         </form>
     </section>
@@ -22,7 +22,7 @@
                     <a href="/delete/{{ post.id }}/">Delete</a>
                 </div>
                 <div class="logo">
-                    <img src="{% static 'img/user.png' %}" />
+                    <img src="{% static 'img/Restaurant.png' %}">
                 </div>
 
                 <div class="name_body">
